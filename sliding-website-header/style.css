@@ -1,0 +1,63 @@
+:root {
+    --dark: rgb(20, 20, 20);
+    --white: rgb(255, 255, 255);
+    --cream: rgb(225, 253, 208);
+    
+    --c1: #e6ddc5;
+    --c2: #FAF9EC;
+    
+    --left-color: var(--c1);
+    --right-color: var(--c2);
+  }
+  
+  body {
+    background-color: var(--dark);
+  }
+
+  .side {
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+    place-items: center;
+    position: absolute;
+    width: 100%;
+  }
+
+  .side .title {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 8vw;
+    margin: 0px 10vw;
+    width: 80vw;
+  }
+
+  .side .fancy {
+    font-family: "Tilt Prism", cursive;
+    font-size: 1.3em;
+    line-height: 0.8em;
+  }
+
+  #left-side {
+    background-color: var(--left-color);
+    width: 60%;
+    z-index: 2;
+  }
+
+  #left-side .title {
+    color: black;
+  }
+
+  #left-side .fancy {
+    color: var(--right-color);
+  }
+
+  #right-side {
+    background-color: var(--right-color);
+  }
+
+  #right-side .title {
+    color: var(--dark);
+  }
+
+  #right-side .fancy {
+    color: #FFFDD1;
+  }
